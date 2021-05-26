@@ -26,7 +26,7 @@ const authController = {
       const token = await authService.genAuthToken(user);
 
       // send register email
-      await emailService.registerEmail(email, user);
+      // await emailService.registerEmail(email, user);
 
       res.cookie('x-access-token', token).send({
         user,
